@@ -6,9 +6,9 @@
 // Konfigurasi LCD address ke 0x3F untuk tampilan 20 karakter dan 4 baris
 // Atur pin pada I2C chip untuk koneksi ke LCD:
 // addr, en,rw,rs,d4,d5,d6,d7,bl,blpol
-LiquidCrystal_I2C lcd(0x27, 2, 1, 0
-int Turbidity_Sensor_Pin = A0;, 4, 5, 6, 7, 3, POSITIVE);  // Atur LCD I2C address
+LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Atur LCD I2C address
 
+int Turbidity_Sensor_Pin = A0;
 float Turbidity_Sensor_Voltage;
 int samples = 600;
 float ntu; // Nephelometric Turbidity Units
